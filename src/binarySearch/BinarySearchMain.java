@@ -56,8 +56,7 @@ public class BinarySearchMain {
         System.out.println("Select one of the following operations:");
         System.out.println("1 - Necessary steps for finding the number \n" +
                 "2 - Find the number from 1 to 128 (in max 7 steps)\n"+
-                "3 - Choose your own min and max numbers (from x to y)\n"+
-                "4 - How many guesses necessary to find the number");
+                "3 - Choose your own min and max numbers (from x to y)");
         int x = scanner.nextInt();
 
         switch (x) {
@@ -73,11 +72,6 @@ public class BinarySearchMain {
                 System.out.print("\nEnter your max number:");
                 int max = scanner.nextInt();
                 findNumbersUsingBinarySearch(min-1, max+1, scanner);
-                break;
-            case 4:
-                System.out.print("Enter the number of elements: ");
-                int numbers = scanner.nextInt();
-                System.out.println("In worst case " + log2(numbers));
                 break;
             default:
                 System.out.println("Not accepted");
